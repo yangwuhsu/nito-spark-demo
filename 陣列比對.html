@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/jquery/jquery-1.11.1.min.js"></script>
+        <script> 
+        $().ready(function() {    
+            var array = [0,1,2,3,4,'age',6,7,8,9];    
+            var array2 = [0,1,'age',6,7,8,9];   
+            var arr3 =[];    
+            for (key in array) {        
+                var stra = array[key];        
+                var count = 0;        
+                for(var j= 0; j < array2.length; j++){            
+                    var strb = array2[j];            
+                    if(stra == strb) {                
+                        count++;            
+                     }        
+            }        
+            if(count===0) {
+                //表示陣列1的這個值沒有重複的,放到arr3列表中            
+                arr3.push(stra);        
+                }    
+            } alert('不重複的值為:'+arr3);});
+            </script>
+            </head>
+            <body>
+
+            </body>
+    </html>
